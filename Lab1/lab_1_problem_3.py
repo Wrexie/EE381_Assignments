@@ -17,6 +17,6 @@ def main():
         if result[0] == 50:
             successCount += 1
 
-    print(successCount)
+    print((successCount/N) * 100)
 
 main()
