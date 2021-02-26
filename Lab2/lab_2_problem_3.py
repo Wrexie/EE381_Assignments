@@ -34,7 +34,8 @@ def main():
             if S == R:
                 successCount += 1
 
-    print("Probability that message will be received incorrectly is:", successCount / rOneCount)
+    print("Probability that if message received is 1, then the message sent was 1 originally is:",
+          successCount / rOneCount)
 
 
 main()
