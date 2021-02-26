@@ -16,8 +16,8 @@ def createMessageBit(bitProbability):
 
 def main():
     p0 = [.6, .4]
-    e0 = [.5, .5]
-    e1 = [.3, .7]
+    e0 = [.95, .05]
+    e1 = [.03, .97]
     N = 100000
     failureCount = 0
 
