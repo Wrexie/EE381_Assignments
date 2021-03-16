@@ -20,21 +20,21 @@ def main():
     N = 10000
     n = 1000
     s = np.zeros((N, 1))
-    X = 0
+    successCount = 0
 
     for i in range(N):
-        X = 0
+        successCount = 0
         for j in range(n):
             die1 = nSidedDie(p)
             die2 = nSidedDie(p)
             die3 = nSidedDie(p)
 
             if die1 == 1 and die2 == 2 and die3 == 3:
-                X += 1
+                successCount += 1
 
-        s[i] = X
+        s[i] = successCount
 
-    b = range(1, len(p) + 2)
+    b = range(0, 12)
     sb = np.size(b)
     h1, bin_edges = np.histogram(s, bins=b)
     b1 = bin_edges[0:sb - 1]
@@ -42,8 +42,8 @@ def main():
     prob = h1 / N
     plt.stem(b1, prob)
     # Graph labels
-    plt.title('PMF for an unfair ' + str(len(p)) + '-sided die')
-    plt.xlabel('Number on the face of the die')
+    plt.title('PMF for rolling a "one," "two," and "three" on 3 dies consecutively')
+    plt.xlabel('Number of successes per 1000 rolls')
     plt.ylabel('Probability')
     plt.xticks(b1)
     plt.show()
