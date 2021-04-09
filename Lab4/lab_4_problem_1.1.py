@@ -28,7 +28,7 @@ def main():
     fig1 = plt.figure(1)
     plt.bar(b1, h1, width=barwidth, edgecolor=edgecolor)
 
-    f = UnifPDF(1, 4, b1)
+    f = UnifPDF(a, b, b1)
     plt.plot(b1, f, 'r')
 
     plt.title('Experimental Values of X')
