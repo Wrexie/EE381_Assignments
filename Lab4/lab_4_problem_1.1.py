@@ -36,6 +36,8 @@ def main():
     plt.plot(b1, f, 'r')
 
     plt.title('Experimental Values of X')
+    plt.xlabel('X')
+    plt.ylabel('PDF')
     plt.legend(['PDF of X'])
     plt.show()
 

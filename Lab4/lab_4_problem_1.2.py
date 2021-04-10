@@ -39,6 +39,8 @@ def main():
     f = ExpPDF(B, b1)
     plt.plot(b1, f, 'r')
     plt.title("Experimental Values of T")
+    plt.xlabel('T')
+    plt.ylabel('PDF')
     plt.legend(['PDF of T'])
     plt.show()
 

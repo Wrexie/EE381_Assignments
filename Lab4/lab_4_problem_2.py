@@ -64,6 +64,8 @@ def main():
         plt.bar(b1, h1, width=barwidth, edgecolor=edgecolor)
         title = "Probability Hisogram of S = ", stack, "books"
         plt.title(title)
+        plt.xlabel('Book Stack Height')
+        plt.ylabel('PDF')
         f = gaussian(mu_x * stack, sig_x * np.sqrt(stack), b1)
         plt.plot(b1, f, 'r')
         plt.show()
