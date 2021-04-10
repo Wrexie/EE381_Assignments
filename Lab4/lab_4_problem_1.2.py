@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import math
 
 
+# Function that calculates exponential PDF
 def ExpPDF(B, x):
     f = np.ones(np.size(x))
     for i in range(np.size(x)):
@@ -10,15 +11,20 @@ def ExpPDF(B, x):
     return f
 
 
+# Main
 def main():
+    # Beta
     B = 40
+    # Size of array of random exponential variables
     n = 10000
+    # Array of T
     T = np.random.exponential(B, n)
 
+    # Plotting code
     nbins = 30  # Number of bins
     edgecolor = 'w'  # Color separating bars in the bargraph
     #
-    bins = [float(x) for x in np.linspace(0, B, nbins + 1)]
+    bins = [float(x) for x in np.linspace(1, B, nbins + 1)]
     h1, bin_edges = np.histogram(T, bins, density=True)
     # Define points on the horizontal axis
     be1 = bin_edges[0:np.size(bin_edges) - 1]
@@ -32,8 +38,11 @@ def main():
 
     f = ExpPDF(B, b1)
     plt.plot(b1, f, 'r')
+    plt.title("Experimental Values of T")
+    plt.legend(['PDF of T'])
     plt.show()
 
+    # Mu and sigma of T
     mu_t = np.mean(T)
     sig_t = np.std(T)
 
