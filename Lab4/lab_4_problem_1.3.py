@@ -3,18 +3,23 @@ import matplotlib.pyplot as plt
 import math
 
 
+# Function that calculates normal PDF
 def NormPDF(m, s, x):
     f = np.ones(np.size(x))
     for i in range(np.size(x)):
         f[i] = (1/(s*math.sqrt(2*math.pi)))*math.exp(-((x[i]-m)**2)/(2*s**2))
     return f
 
+
+# main
 def main():
     mu = 2.5
     sig = .75
     n = 10000
+    # Array of random normal variables
     x = np.random.normal(mu, sig, n)
 
+    # Plotting code
     nbins = 30  # Number of bins
     edgecolor = 'w'  # Color separating bars in the bargraph
     #
@@ -32,8 +37,13 @@ def main():
 
     f = NormPDF(mu,sig, b1)
     plt.plot(b1, f, 'r')
+    plt.title("Experimental Values of X")
+    plt.xlabel('X')
+    plt.ylabel('PDF')
+    plt.legend(['PDF of X'])
     plt.show()
 
+    # Mu and sigma of X
     mu_x = np.mean(x)
     sig_x = np.std(x)
 

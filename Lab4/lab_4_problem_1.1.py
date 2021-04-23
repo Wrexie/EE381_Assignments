@@ -2,17 +2,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+# Function that calculates uniform pdf
 def UnifPDF(a, b, x):
     f = (1/abs(b-a))*np.ones(np.size(x))
     return f
 
 
+# Main function
 def main():
     a = 1
     b = 4
     n = 10000
+    # Array of random variable x
     x = np.random.uniform(a, b, n)
 
+    # Plotting code
     nbins = 30  # Number of bins
     edgecolor = 'w'  # Color separating bars in the bargraph
     #
@@ -32,9 +36,12 @@ def main():
     plt.plot(b1, f, 'r')
 
     plt.title('Experimental Values of X')
+    plt.xlabel('X')
+    plt.ylabel('PDF')
     plt.legend(['PDF of X'])
     plt.show()
 
+    # mean and standard deviation of x
     mu_x = np.mean(x)
     sig_x = np.std(x)
 
