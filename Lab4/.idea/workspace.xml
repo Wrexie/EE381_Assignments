@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccfcfe96-6686-4558-a99e-04be115a2205" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_4_problem_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_4_problem_3.py" afterDir="false" />
-    </list>
+    <list default="true" id="ccfcfe96-6686-4558-a99e-04be115a2205" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618009659820</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="worked on problem 3">
+      <created>1618010468806</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618010468806</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -249,6 +253,7 @@
     <MESSAGE value="worked on problem 2" />
     <MESSAGE value="finished problem 2" />
     <MESSAGE value="added problem 3 .py file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added problem 3 .py file" />
+    <MESSAGE value="worked on problem 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked on problem 3" />
   </component>
 </project>
